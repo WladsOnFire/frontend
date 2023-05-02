@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main-frame">
+        <div class="header">
+            <div>
+                <p class="site-name">Teachinder</p>
+            </div>
+            <div>
+                <input type="text" placeholder="Name,note or age to search">
+                <button>Search</button>
+            </div>
+        </div>
+
+        <div class="menu">
+            <div>
+                <a href="#">Teachers</a>
+                <a href="#">Statistics</a>
+                <a href="#">Favourites</a>
+                <a href="#">About</a>
+            </div>
+            <div>
+                <button onclick="window.location.href='#add-teacher'">Add teacher</button>
+            </div>
+        </div>
+
+        <hr />
+        <p class="part-header">Top Teachers</p>
+
+
+        <div class="table-choice">
+            <div>
+                <label for="age">Age</label>
+                <select name="age" id="age">
+                    <option>18-31</option>
+                    <option>31-50</option>
+                    <option>50-65</option>
+                </select>
+            </div>
+            <hr class="vr">
+            <div>
+                <label for="region">Region</label>
+                <select name="region" id="region">
+                    <option>Europe</option>
+                    <option>America</option>
+                    <option>Asia</option>
+                    <option>Africa</option>
+                </select>
+            </div>
+            <hr class="vr">
+            <div>
+                <label for="sex">Sex</label>
+                <select name="sex" id="sex">
+                    <option>Male</option>
+                    <option>Female</option>
+                </select>
+            </div>
+            <hr class="vr">
+            <div>
+                <input type="checkbox" name="withPhoto"></input>
+                <label for="withPhoto">Only with photo</label>
+            </div>
+            <hr class="vr">
+            <div>
+                <input type="checkbox" name="onlyFav"></input>
+                <label for="onlyFav">Only favourites</label>
+            </div>
+
+        </div>
+        <div class="top-teachers-grid">
+            <div>
+                <div class="round-div">
+                    <img class="round-img" src="teacher.png" onclick="window.location.href='#view-teacher'">
+                </div>
+                <div class="grid-name">
+                    <p>Name</p>
+                    <p>Surname</p>
+                </div>
+                <div class="grid-discipline">
+                    <p>Discipline</p>
+                </div>
+                <div class="grid-country">
+                    <p>Country</p>
+                </div>
+            </div>
+            <div>
+                <div class="round-div">
+                    <img class="round-img" src="teacher.png">
+                </div>
+                <div class="grid-name">
+                    <p>Name</p>
+                    <p>Surname</p>
+                </div>
+                <div class="grid-discipline">
+                    <p>Discipline</p>
+                </div>
+                <div class="grid-country">
+                    <p>Country</p>
+                </div>
+            </div>
+            <div>
+                <div class="round-div">
+                    <img class="round-img" src="teacher.png">
+                </div>
+                <div class="grid-name">
+                    <p>Name</p>
+                    <p>Surname</p>
+                </div>
+                <div class="grid-discipline">
+                    <p>Discipline</p>
+                </div>
+                <div class="grid-country">
+                    <p>Country</p>
+                </div>
+            </div>
+            <div>
+                <div class="round-div">
+                    <img class="round-img" src="teacher.png">
+                </div>
+                <div class="grid-name">
+                    <p>Name</p>
+                    <p>Surname</p>
+                </div>
+                <div class="grid-discipline">
+                    <p>Discipline</p>
+                </div>
+                <div class="grid-country">
+                    <p>Country</p>
+                </div>
+            </div>
+            <div>
+                <div class="round-div">
+                    <img class="round-img" src="teacher.png">
+                </div>
+                <div class="grid-name">
+                    <p>Name</p>
+                    <p>Surname</p>
+                </div>
+                <div class="grid-discipline">
+                    <p>Discipline</p>
+                </div>
+                <div class="grid-country">
+                    <p>Country</p>
+                </div>
+            </div>
+            <div>
+                <div class="round-div">
+                    <img class="round-img" src="teacher.png">
+                </div>
+                <div class="grid-name">
+                    <p>Name</p>
+                    <p>Surname</p>
+                </div>
+                <div class="grid-discipline">
+                    <p>Discipline</p>
+                </div>
+                <div class="grid-country">
+                    <p>Country</p>
+                </div>
+            </div>
+            <div>
+                <div class="round-div">
+                    <img class="round-img" src="teacher.png">
+                </div>
+                <div class="grid-name">
+                    <p>Name</p>
+                    <p>Surname</p>
+                </div>
+                <div class="grid-discipline">
+                    <p>Discipline</p>
+                </div>
+                <div class="grid-country">
+                    <p>Country</p>
+                </div>
+            </div>
+            <div>
+                <div class="round-div">
+                    <img class="round-img" src="teacher.png">
+                </div>
+                <div class="grid-name">
+                    <p>Name</p>
+                    <p>Surname</p>
+                </div>
+                <div class="grid-discipline">
+                    <p>Discipline</p>
+                </div>
+                <div class="grid-country">
+                    <p>Country</p>
+                </div>
+            </div>
+            <div>
+                <div class="round-div">
+                    <img class="round-img" src="teacher.png">
+                </div>
+                <div class="grid-name">
+                    <p>Name</p>
+                    <p>Surname</p>
+                </div>
+                <div class="grid-discipline">
+                    <p>Discipline</p>
+                </div>
+                <div class="grid-country">
+                    <p>Country</p>
+                </div>
+            </div>
+            <div>
+                <div class="round-div">
+                    <img class="round-img" src="teacher.png">
+                </div>
+                <div class="grid-name">
+                    <p>Name</p>
+                    <p>Surname</p>
+                </div>
+                <div class="grid-discipline">
+                    <p>Discipline</p>
+                </div>
+                <div class="grid-country">
+                    <p>Country</p>
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+
+        <hr />
+        <p class="part-header">Statistics</p>
+
+        <div class="statistics-div">
+            <table class="statistics-table">
+                <tr class="statistics-table-header">
+                    <th>Name</th>
+                    <th>Speciality</th>
+                    <th>Age</th>
+                    <th>Gender</th>
+                    <th>Nationality</th>
+                </tr>
+                <tr>
+                    <td>_name</td>
+                    <td>_speciality</td>
+                    <td>_age</td>
+                    <td>_gender</td>
+                    <td>_nationality</td>
+                </tr>
+                <tr>
+                    <td>_name</td>
+                    <td>_speciality</td>
+                    <td>_age</td>
+                    <td>_gender</td>
+                    <td>_nationality</td>
+                </tr>
+                <tr>
+                    <td>_name</td>
+                    <td>_speciality</td>
+                    <td>_age</td>
+                    <td>_gender</td>
+                    <td>_nationality</td>
+                </tr>
+                <tr>
+                    <td>_name</td>
+                    <td>_speciality</td>
+                    <td>_age</td>
+                    <td>_gender</td>
+                    <td>_nationality</td>
+                </tr>
+                <tr>
+                    <td>_name</td>
+                    <td>_speciality</td>
+                    <td>_age</td>
+                    <td>_gender</td>
+                    <td>_nationality</td>
+                </tr>
+                <tr>
+                    <td>_name</td>
+                    <td>_speciality</td>
+                    <td>_age</td>
+                    <td>_gender</td>
+                    <td>_nationality</td>
+                </tr>
+                <tr>
+                    <td>_name</td>
+                    <td>_speciality</td>
+                    <td>_age</td>
+                    <td>_gender</td>
+                    <td>_nationality</td>
+                </tr>
+                <tr>
+                    <td>_name</td>
+                    <td>_speciality</td>
+                    <td>_age</td>
+                    <td>_gender</td>
+                    <td>_nationality</td>
+                </tr>
+                <tr>
+                    <td>_name</td>
+                    <td>_speciality</td>
+                    <td>_age</td>
+                    <td>_gender</td>
+                    <td>_nationality</td>
+                </tr>
+                <tr>
+                    <td>_name</td>
+                    <td>_speciality</td>
+                    <td>_age</td>
+                    <td>_gender</td>
+                    <td>_nationality</td>
+                </tr>
+            </table>
+        </div>
+        <div class="table-nextpage">
+            <div>
+                <a href="#">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">...</a>
+                <a href="#">Last</a>
+            </div>
+        </div>
+        <div class="favourites-header">
+        <hr />
+        <p class="part-header">Favourites</p>
+        </div>
+        <div class="favourites-list">
+            <div class="left-arrow">
+                <img src="arrow.png">
+            </div>
+            <div class="right-arrow">
+                <img src="arrow.png">
+            </div>
+            <div class="favourites">
+                <div>
+                    <div class="round-div">
+                        <img class="round-img" src="teacher.png">
+                    </div>
+                    <div class="grid-name">
+                        <p>Name</p>
+                        <p>Surname</p>
+                    </div>
+                    <div class="grid-discipline">
+                        <p>Discipline</p>
+                    </div>
+                    <div class="grid-country">
+                        <p>Country</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="round-div">
+                        <img class="round-img" src="teacher.png">
+                    </div>
+                    <div class="grid-name">
+                        <p>Name</p>
+                        <p>Surname</p>
+                    </div>
+                    <div class="grid-discipline">
+                        <p>Discipline</p>
+                    </div>
+                    <div class="grid-country">
+                        <p>Country</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="round-div">
+                        <img class="round-img" src="teacher.png">
+                    </div>
+                    <div class="grid-name">
+                        <p>Name</p>
+                        <p>Surname</p>
+                    </div>
+                    <div class="grid-discipline">
+                        <p>Discipline</p>
+                    </div>
+                    <div class="grid-country">
+                        <p>Country</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="round-div">
+                        <img class="round-img" src="teacher.png">
+                    </div>
+                    <div class="grid-name">
+                        <p>Name</p>
+                        <p>Surname</p>
+                    </div>
+                    <div class="grid-discipline">
+                        <p>Discipline</p>
+                    </div>
+                    <div class="grid-country">
+                        <p>Country</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="round-div">
+                        <img class="round-img" src="teacher.png">
+                    </div>
+                    <div class="grid-name">
+                        <p>Name</p>
+                        <p>Surname</p>
+                    </div>
+                    <div class="grid-discipline">
+                        <p>Discipline</p>
+                    </div>
+                    <div class="grid-country">
+                        <p>Country</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <hr />
+
+        <div class="text">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis aut neque veritatis, sed quas
+                deleniti
+                dignissimos quo doloribus dicta quam illo corrupti vel in commodi accusantium maxime eaque voluptate
+                quos.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum cum, quisquam voluptatum unde a commodi
+                tenetur at. Ducimus nam, repellendus quasi veritatis commodi doloribus voluptate laudantium quisquam,
+                suscipit dicta obcaecati.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis eligendi earum doloremque. Dicta nemo sed
+                placeat facere! Culpa facilis laudantium maxime numquam error esse, corrupti unde officiis fugiat est
+                incidunt?</p>
+        </div>
+        <div class="menu">
+            <div>
+                <a href="#">Teachers</a>
+                <a href="#">Statistics</a>
+                <a href="#">Favourites</a>
+                <a href="#">About</a>
+            </div>
+            <div>
+                <button  onclick="window.location.href='#add-teacher'">Add teacher</button>
+            </div>
+        </div>
+
+    </div>
+    <div class="add-popup" id="add-teacher">
+        <div class="add-teacher">
+            <div class="label">
+                <div>
+                    <p>Add Teacher</p>
+                </div>
+                <div>
+                    <img src="exit_cross.png" onclick="window.location.href='#'"/>
+                </div>
+            </div>
+
+            <div class="inputs">
+
+                <div class="in-row">
+                    <div>
+                        <p>Name</p>
+                        <input type="text" placeholder="Enter name">
+                    </div>
+
+                    <div>
+                        <p>Speciality</p>
+                        <select>
+                            <option>Mathematics</option>
+                            <option>Biology</option>
+                            <option>Geography</option>
+                            <option>Physics</option>
+                        </select>
+                    </div>
+                </div>
+
+
+
+                <div class="in-columns">
+
+                    <div>
+                        <p>Country</p>
+                        <select>
+                            <option>Ukraine</option>
+                            <option>Poland</option>
+                            <option>Germany</option>
+                            <option>France</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <p>City</p>
+                        <input type="text" />
+                    </div>
+
+                    <div>
+                        <p>Email</p>
+                        <input type="email" />
+                    </div>
+
+                    <div>
+                        <p>Phone</p>
+                        <input type="tel" />
+                    </div>
+
+                    <div>
+                        <p>Date of birth</p>
+                        <input type="date">
+                    </div>
+
+
+
+                </div>
+
+                <div class="sex-radiobtns">
+                    <p>Sex</p>
+                    <label for="male">Male<input type="radio" value="Male" id="male" name="gender" /></label>
+                    <label for="female">Female<input type="radio" value="Female" id="female" name="gender" /></label>
+                </div>
+
+
+                <div class="bgcolor-select">
+                    <p>Background color</p>
+                    <input type="color" />
+                </div>
+
+                <div class="notes">
+                    <p>Notes (optional)</p>
+                    <textarea></textarea>
+                </div>
+                <button>Add</button>
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+    <div class="view-popup" id="view-teacher">
+        <div class="view-teacher">
+            <div class="label">
+                <div>
+                    <p>Teacher Info</p>
+                </div>
+                <div>
+                    <img src="exit_cross.png"  onclick="window.location.href='#'"/>
+                </div>
+            </div>
+
+            <div class="teacher-info">
+                <div class="main-info">
+                    <img src="teacher.png" />
+                    <p class="name">Name Surname</p>
+                    <p class="subject">Subject</p>
+                    <p>Country, city</p>
+                    <p>Age, gender</p>
+                    <p class="mail">email@mail.com</p>
+                    <p>+38099000000</p>
+                </div>
+                <p class="details">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat ab unde recusandae quasi
+                    praesentium odio dolore possimus voluptatum. Obcaecati veritatis velit vel porro illo aspernatur sed
+                    deserunt. Quaerat, sunt magni.</p>
+                <a href="#" class="map-link">toggle map</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add teacher page</title>
+</head>
+<body>
+    <div align="center">
+        <h1>Add teacher form</h1>
+        <form method="POST">
+            <fieldset style="width:300px">
+                <legend>Add teacher</legend>
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" />
+                    <br />
+                    <br />
+                    <label for="surname">Surname:</label>
+                    <input type="text" id="surname" />
+                    <br />
+                    <br />
+                    <label for="byFather">By father:</label>
+                    <input type="text" id="byFather" />
+                </div>
+                <br />
+                <div title="Gender">
+                    <input type="radio" value="Male" id="male" name="gender" />
+                    <label for="male">Male</label>
+
+                    <input type="radio" value="Female" id="female" name="gender" />
+                    <label for="female">Female</label>
+                </div>
+                <br />
+                <label for="email">Email:</label>
+                <input type="email" name="email" />
+                <br />
+                <br />
+                <label for="phone">Phone number:</label>
+                <input type="tel" id="phone" />
+                <br />
+                <br />
+                <label for="background">Preffered background color:</label>
+                <input type="color" id="background" />
+                <br />
+                <br />
+                <label for="country">Country:</label>
+                <input type="text" id="country" />
+                <br />
+                <br />
+                <label for="city">City:</label>
+                <input type="text" id="city">
+                <br />
+                <br />
+                <label for="comment">Comment:</label>
+                <textarea style="resize: none" rows="5" cols="40" name="comment" placeholder="Enter text"></textarea>
+                <br />
+                <br />
+                <input type="submit" value="Add" />
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>
