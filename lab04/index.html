@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Teachinder</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="#">
+</head>
+
+<body>
+    <div class="main-frame">
+        <div class="header">
+            <div>
+                <p class="site-name" id="site-name">Teachinder</p>
+            </div>
+            <div>
+                <input type="text" placeholder="Name,note or age to search" id="searchInput">
+                <button id="searchButton">Search</button>
+            </div>
+        </div>
+
+        <div class="menu">
+            <div>
+                <a href="#">Teachers</a>
+                <a href="#">Statistics</a>
+                <a href="#">Favourites</a>
+                <a href="#">About</a>
+            </div>
+            <div>
+                <button id="addView">Add teacher</button>
+            </div>
+        </div>
+
+        <hr />
+        <p class="part-header">Top Teachers</p>
+
+
+        <div class="table-choice">
+            <div>
+                <label for="age">Age</label>
+                <select name="age" id="age">
+                    <option>18-31</option>
+                    <option>31-50</option>
+                    <option>50-65</option>
+                    <option>65-80</option>
+                </select>
+            </div>
+            <hr class="vr">
+            <div>
+                <label for="region">Region</label>
+                <select name="region" id="region">
+                    <option>United States</option>
+                    <option>Turkey</option>
+                    <option>Switzerland</option>
+                    <option>Spain</option>
+                    <option>Norway</option>
+                    <option>Netherlands</option>
+                    <option>Ireland</option>
+                    <option>Germany</option>
+                    <option>France</option>
+                    <option>Finland</option>
+                    <option>Denmark</option>
+                    <option>Canada</option>
+                    <option>Australia</option>
+                    <option>New Zealand</option>
+                </select>
+            </div>
+            <hr class="vr">
+            <div>
+                <label for="sex">Sex</label>
+                <select name="sex" id="sex">
+                    <option>Male</option>
+                    <option>Female</option>
+                </select>
+            </div>
+            <hr class="vr">
+            <div>
+                <input type="checkbox" name="withPhoto" id="withPhoto"></input>
+                <label for="withPhoto">Only with photo</label>
+            </div>
+            <hr class="vr">
+            <div>
+                <input type="checkbox" name="onlyFav" id="onlyFav"></input>
+                <label for="onlyFav" >Only favourites</label>
+            </div>
+
+        </div>
+        <div class="top-teachers-grid" id="top-teachers-grid">
+        </div>
+
+        <hr />
+        <p class="part-header">Statistics</p>
+
+        <div class="statistics-div">
+            <table class="statistics-table" id="statistics-table">
+                <tr class="statistics-table-header" id="statistics-table-header">
+                    <th id="sortName">Name</th>
+                    <th id="sortCourse">Speciality</th>
+                    <th id="sortAge">Age</th>
+                    <th id="sortGender">Gender</th>
+                    <th id="sortCountry">Nationality</th>
+                </tr>
+            </table>
+        </div>
+        <div class="table-nextpage">
+            <div>
+                <a id="1" >1</a>
+                <a id="2" >2</a>
+                <a id="3" >3</a>
+                <a href="#">...</a>
+                <a id="last">Last</a>
+            </div>
+        </div>
+        <div class="favourites-header">
+            <hr />
+            <p class="part-header">Favourites</p>
+        </div>
+        <div class="favourites-list">
+            <div class="left-arrow">
+                <img src="arrow.png" id="leftarrow">
+            </div>
+            <div class="right-arrow">
+                <img src="arrow.png" id="rightarrow">
+            </div>
+            <div class="favourites" id="favourites-grid">
+            </div>
+        </div>
+
+
+        <hr />
+
+        <div class="text">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis aut neque veritatis, sed quas
+                deleniti
+                dignissimos quo doloribus dicta quam illo corrupti vel in commodi accusantium maxime eaque voluptate
+                quos.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum cum, quisquam voluptatum unde a commodi
+                tenetur at. Ducimus nam, repellendus quasi veritatis commodi doloribus voluptate laudantium quisquam,
+                suscipit dicta obcaecati.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis eligendi earum doloremque. Dicta nemo sed
+                placeat facere! Culpa facilis laudantium maxime numquam error esse, corrupti unde officiis fugiat est
+                incidunt?</p>
+        </div>
+        <div class="menu">
+            <div>
+                <a href="#">Teachers</a>
+                <a href="#">Statistics</a>
+                <a href="#">Favourites</a>
+                <a href="#">About</a>
+            </div>
+            <div>
+                <button id="addView2">Add teacher</button>
+            </div>
+        </div>
+
+    </div>
+    <div class="add-popup" id="add-teacher">
+        <div class="add-teacher">
+            <div class="label">
+                <div>
+                    <p>Add Teacher</p>
+                </div>
+                <div>
+                    <img src="exit_cross.png" id="exitViewBtn" />
+                </div>
+            </div>
+
+            <div class="inputs">
+
+                <div class="in-row">
+                    <div>
+                        <p>Name</p>
+                        <input type="text" id="nameInput" placeholder="Enter name">
+                    </div>
+
+                    <div>
+                        <p>Speciality</p>
+                        <select id="specInput">
+                            <option>Mathematics</option>
+                            <option>Biology</option>
+                            <option>Geography</option>
+                            <option>Physics</option>
+                        </select>
+                    </div>
+                </div>
+
+
+
+                <div class="in-columns">
+
+                    <div>
+                        <p>Country</p>
+                        <select id="countryInput">
+                            <option>Ukraine</option>
+                            <option>Poland</option>
+                            <option>Germany</option>
+                            <option>France</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <p>City</p>
+                        <input type="text" id="cityInput" />
+                    </div>
+
+                    <div>
+                        <p>Email</p>
+                        <input type="email" id="emailInput" />
+                    </div>
+
+                    <div>
+                        <p>Phone</p>
+                        <input type="tel" id="phoneInput" />
+                    </div>
+
+                    <div>
+                        <p>Date of birth</p>
+                        <input type="date" id="dobInput">
+                    </div>
+
+
+
+                </div>
+
+                <div class="sex-radiobtns">
+                    <p>Sex</p>
+                    <label for="male">Male<input type="radio" value="Male" id="male" name="gender" /></label>
+                    <label for="female">Female<input type="radio" value="Female" id="female" name="gender" /></label>
+                </div>
+
+
+                <div class="bgcolor-select">
+                    <p>Background color</p>
+                    <input type="color" id="bgInput" />
+                </div>
+
+                <div class="notes">
+                    <p>Notes (optional)</p>
+                    <textarea id="noteInput"></textarea>
+                </div>
+                <button id="addTeacherBtn">Add</button>
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+    <div class="view-popup" id="view-teacher">
+        <div class="view-teacher">
+            <div class="label">
+                <div>
+                    <p>Teacher Info</p>
+                </div>
+                <div>
+                    <img id="exit_btn" src="exit_cross.png" />
+                </div>
+            </div>
+
+            <div class="teacher-info" id="teacher-info">
+
+            </div>
+        </div>
+    </div>
+</body>
+<script type="module" src="./script.js"></script>
+
+</html>
