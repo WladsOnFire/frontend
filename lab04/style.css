@@ -1,0 +1,941 @@
+.main-frame {
+
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+body {
+    margin: 0;
+}
+
+hr {
+    width: 42%;
+    height: 2px;
+    background-color: black;
+}
+
+a {
+    color: orangered;
+    text-decoration: none;
+}
+
+a:hover {
+    color: brown;
+}
+
+
+
+td {
+    padding: 1%;
+}
+
+tr:nth-child(odd) {
+    background-color: #FCF5F3
+}
+
+th {
+    background-color: white;
+    font-weight: normal;
+    height: 40px;
+    transition: 0.5s;
+}
+
+th:hover {
+    background-color: rgb(179, 177, 177);
+    border-bottom: 5px black solid;
+    background-image: url(arrow.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    transition: 0.5s;
+}
+
+p {
+    font: 1em sans-serif;
+}
+
+label {
+    line-height: 10px;
+    font-size: 15px;
+    font-weight: lighter;
+    color: #8c8b8b;
+}
+
+label:hover {
+    color: black;
+}
+
+select {
+    height: 30px
+}
+
+.site-name {
+    font-size: 40px;
+    margin-top: -5px;
+    color: white;
+    background-color: white;
+    text-shadow: -1px -1px 0 red, 1px -2px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.site-name:hover {
+    text-shadow: -4px -1px 0 red, 1px -2px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.table-choice {
+    display: flex;
+
+    justify-content: left;
+    align-items: center;
+}
+
+.table-choice div {
+    margin-right: 1%;
+}
+
+.table-choice div label {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.header {
+    display: flex;
+    padding-top: 30px;
+    justify-content: space-between;
+}
+
+.header button {
+    font-size: 15px;
+    color: orangered;
+    height: 37px;
+    width: 100px;
+    background-color: white;
+    border-color: orangered;
+    margin-left: 15px;
+}
+
+.header input {
+    font-size: 15px;
+    height: 30px;
+    width: 200px;
+    transition: 0.5s;
+}
+
+.header input:hover {
+    width: 400px;
+    transition: 0.5s;
+}
+
+.header button:hover {
+    color: white;
+    background-color: orangered;
+}
+
+.menu {
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+
+.menu div a {
+    font-size: 25px;
+    line-height: 50px;
+    margin-right: 35px;
+}
+
+.menu div button {
+    font-size: 25px;
+    color: orangered;
+    height: 50px;
+    width: 175px;
+    background-color: white;
+    border-color: orangered;
+}
+
+.menu div button:hover {
+    color: white;
+    background-color: orangered;
+}
+
+.vr {
+    height: 0px;
+    width: 20px;
+    border-top: dotted #8c8b8b;
+    rotate: 90deg;
+    margin: 0;
+    background-color: white;
+}
+
+.top-teachers-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 1%;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    align-items: center;
+    justify-content: center;
+}
+
+.round-div {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    vertical-align: middle;
+    border: 5px solid orange;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.round-div:hover {
+    border: 5px solid orangered;
+}
+
+.round-img {
+    width: 100%;
+    border-radius: 50%;
+    margin: 0 auto;
+    transition: 0.5s;
+
+}
+
+.round-img:hover {
+    transition: 0.5s;
+    transform: scale(1.2);
+
+}
+
+.part-header {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+.grid-name {
+    line-height: 5px;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.grid-name p {
+    margin: 0;
+}
+
+.grid-discipline {
+    line-height: 10px;
+    font-size: 15px;
+    font-weight: lighter;
+    color: #8c8b8b;
+}
+
+.grid-country {
+    line-height: 10px;
+    font-size: 15px;
+}
+
+.statistics-table {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.statistics-table-header {
+    border-bottom: 1px solid black;
+}
+
+.table-nextpage {
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+
+    padding-top: 25px;
+}
+
+.table-nextpage div a {
+    margin-right: 20px;
+}
+
+.favourites {
+    display: flex;
+    justify-content: space-between;
+    gap: 1%;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.left-arrow {
+    float: left;
+    width: 5%;
+    margin-top: 100px;
+    rotate: 90deg;
+}
+
+.left-arrow img {
+    width: 100%;
+}
+
+.right-arrow {
+    float: right;
+    width: 5%;
+    margin-top: 100px;
+    rotate: -90deg;
+}
+
+.right-arrow img {
+    width: 100%;
+}
+
+.left-arrow img:hover {
+    filter: brightness(50%);
+}
+
+.right-arrow img:hover {
+    filter: brightness(50%);
+}
+
+.text {
+    padding-top: 30px;
+}
+
+.add-popup {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(3px);
+    top: 0;
+    position: fixed;
+    visibility: hidden;
+}
+
+.view-popup {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(3px);
+    top: 0;
+    position: fixed;
+    visibility: hidden;
+}
+
+.view-popup:target {
+    visibility: visible;
+}
+
+.add-popup:target {
+    visibility: visible;
+}
+
+.add-teacher {
+    width: 560px;
+    height: 900px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+}
+
+.add-teacher .label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+    height: 65px;
+    overflow: hidden;
+    background-color: rgb(65, 61, 61);
+
+}
+
+.add-teacher .label p {
+    padding-left: 20px;
+    font-size: 30px;
+    color: white;
+}
+
+
+.add-teacher .label img {
+    padding-right: 30px;
+    width: 20px;
+    height: 20px;
+}
+
+.add-teacher .label img:hover {
+    filter: brightness(50%);
+}
+
+
+.add-teacher .inputs {
+    padding: 40px;
+    padding-top: 0px;
+    height: 755px;
+    width: 480px;
+}
+
+.inputs p {
+    color: gray;
+}
+
+.in-row p {
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.in-row input {
+    width: 99.2%;
+    height: 40px;
+    padding: 0px;
+}
+
+.in-row select {
+    width: 100%;
+    height: 40px;
+}
+
+.in-columns {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 80px;
+    align-items: center;
+    grid-column-gap: 10px;
+}
+
+.in-columns div {
+    padding-right: 5px;
+}
+
+.in-columns p {
+    margin-bottom: 5px;
+}
+
+.in-columns input {
+    width: 230px;
+    height: 40px;
+    padding: 0px;
+}
+
+.in-columns select {
+    width: 230px;
+    height: 40px;
+}
+
+.sex-radiobtns {
+    padding-top: 20px;
+}
+
+.bgcolor-select {
+    padding-top: 20px;
+}
+
+.sex-radiobtns p {
+    display: inline;
+    padding-right: 25px;
+}
+
+.sex-radiobtns label {
+    padding-right: 25px;
+}
+
+.bgcolor-select p {
+    display: inline;
+    padding-right: 25px;
+}
+
+.notes textarea {
+    width: 99.2%;
+    padding: 0;
+    margin-top: -10px;
+    height: 130px;
+    resize: none;
+}
+
+.inputs button {
+    margin-top: 30px;
+    width: 480px;
+    height: 60px;
+    color: orangered;
+    border-color: orangered;
+    background-color: white;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.inputs button:hover {
+    background-color: orangered;
+    color: white;
+}
+
+.view-teacher {
+    width: 950px;
+    height: 560px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+}
+
+.view-teacher .label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+    height: 65px;
+    overflow: hidden;
+    background-color: rgb(65, 61, 61);
+}
+
+.view-teacher .label img {
+    padding-right: 30px;
+    width: 20px;
+    height: 20px;
+}
+
+.view-teacher .label img:hover {
+    filter: brightness(50%);
+}
+
+.view-teacher .label p {
+    padding-left: 20px;
+    font-size: 30px;
+    color: white;
+}
+
+.teacher-info {
+    padding: 20px;
+    width: 910px;
+    height: 455px;
+}
+
+.teacher-info img {
+    float: left;
+    margin-right: 40px;
+}
+
+.teacher-info img {
+    width: 320px;
+    height: 320px;
+}
+
+.main-info {
+    height: 320px;
+}
+
+.main-info .name {
+    font-size: 45px;
+}
+
+.main-info .subject {
+    margin-top: 1px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.main-info p {
+    margin-top: 15px;
+}
+
+.main-info .mail {
+    color: rgb(36, 212, 215);
+}
+
+.map-link {
+    color: rgb(36, 212, 215);
+    text-decoration: underline;
+    text-decoration-color: rgb(36, 212, 215);
+    text-decoration-style: dotted;
+}
+
+.map-link:hover {
+    color: rgb(24, 126, 128);
+}
+
+@media only screen and (max-width: 768px) {
+    .top-teachers-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .favourites-header {
+
+        display: none;
+    }
+
+    .favourites-list {
+
+        display: none;
+    }
+
+    .view-teacher {
+        width: 475px;
+        height: 280px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+    }
+
+    .view-teacher .label img {
+        padding-right: 30px;
+        width: 10px;
+        height: 10px;
+    }
+
+    .view-teacher .label p {
+        padding-left: 20px;
+        font-size: 15px;
+        color: white;
+    }
+
+    .teacher-info {
+        padding: 20px;
+        width: 435px;
+        height: 150px;
+    }
+
+
+    .teacher-info img {
+        width: 80px;
+        height: 80px;
+        float: left;
+        margin-right: 15px;
+    }
+
+    .main-info p {
+        margin-top: 0px;
+        padding: 0;
+        margin-bottom: 1px;
+        font-size: 10px;
+    }
+
+    .main-info {
+        height: 70px;
+    }
+
+    .main-info .name {
+        font-size: 15px;
+    }
+
+    .main-info .subject {
+        margin-top: 1px;
+        font-size: 10px;
+        font-weight: bold;
+    }
+
+}
+
+@media only screen and (max-width: 425px) {
+    .top-teachers-grid {
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    hr {
+        margin-top: 90px;
+    }
+
+    .header input {
+        font-size: 15px;
+        height: 30px;
+        width: 100px;
+        transition: 0.5s;
+    }
+
+
+
+    .header input:hover {
+        width: 190px;
+        transition: 0.5s;
+    }
+
+    .site-name {
+        font-size: 20px;
+        margin-top: 10px;
+        color: white;
+        background-color: white;
+        text-shadow: -1px -1px 0 red, 1px -2px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    }
+
+
+    .site-name:hover {
+        text-shadow: -2px -1px 0 red, 1px -2px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    }
+
+
+    .view-teacher {
+        width: 475px;
+        height: 280px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+    }
+
+    .view-teacher .label img {
+        padding-right: 30px;
+        width: 10px;
+        height: 10px;
+    }
+
+    .view-teacher .label p {
+        padding-left: 20px;
+        font-size: 15px;
+        color: white;
+    }
+
+    .teacher-info {
+        padding: 20px;
+        width: 435px;
+        height: 150px;
+    }
+
+
+    .teacher-info img {
+        width: 80px;
+        height: 80px;
+        float: left;
+        margin-right: 15px;
+    }
+
+    .main-info p {
+        margin-top: 0px;
+        padding: 0;
+        margin-bottom: 1px;
+        font-size: 10px;
+    }
+
+    .main-info {
+        height: 70px;
+    }
+
+    .main-info .name {
+        font-size: 15px;
+    }
+
+    .main-info .subject {
+        margin-top: 1px;
+        font-size: 10px;
+        font-weight: bold;
+    }
+
+    .add-teacher {
+        width: 280px;
+        height: 700px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+    }
+
+    .add-teacher .label {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+        width: 100%;
+        height: 65px;
+        overflow: hidden;
+        background-color: rgb(65, 61, 61);
+
+    }
+
+
+
+    .add-teacher .label p {
+        padding-left: 20px;
+        font-size: 15px;
+        color: white;
+    }
+
+
+    .add-teacher .label img {
+        padding-right: 15px;
+        width: 15px;
+        height: 15px;
+    }
+
+    .add-teacher .label img:hover {
+        filter: brightness(50%);
+    }
+
+
+    .add-teacher .inputs {
+        padding: 5px;
+        padding-top: 0px;
+        height: 377.5px;
+        width: 240px;
+    }
+
+    .inputs p {
+        color: gray;
+    }
+
+    .in-row p {
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+
+    .in-row input {
+        width: 270px;
+        height: 20px;
+        padding: 0px;
+    }
+
+    .in-row select {
+        width: 270px;
+        height: 20px;
+    }
+
+    .in-columns {
+        margin-top: 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: 60px;
+        align-items: center;
+        grid-column-gap: 10px;
+    }
+
+    .in-columns div {
+        padding-right: 2px;
+    }
+
+    .in-columns p {
+        margin-bottom: 5px;
+    }
+
+    .in-columns input {
+        width: 125px;
+        height: 20px;
+        padding: 0px;
+    }
+
+    .in-columns select {
+        width: 125px;
+        height: 20px;
+    }
+
+    .sex-radiobtns {
+        padding-top: 20px;
+    }
+
+    .bgcolor-select {
+        padding-top: 20px;
+    }
+
+    .sex-radiobtns p {
+        display: inline;
+        padding-right: 25px;
+    }
+
+    .sex-radiobtns label {
+        padding-right: 25px;
+    }
+
+    .bgcolor-select p {
+        display: inline;
+        padding-right: 25px;
+    }
+
+    .notes textarea {
+        width: 270px;
+        padding: 0;
+        margin-top: -10px;
+        height: 130px;
+        resize: none;
+    }
+
+    .inputs button {
+        margin-top: 30px;
+        width: 270px;
+        height: 30px;
+        color: orangered;
+        border-color: orangered;
+        background-color: white;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .inputs button:hover {
+        background-color: orangered;
+        color: white;
+    }
+
+}
+
+@media only screen and (max-width: 375px) {
+
+    .header input {
+        font-size: 10px;
+        height: 50px;
+        width: 100px;
+        transition: 0.5s;
+    }
+
+    .header input:hover {
+        width: 130px;
+        transition: 0.5s;
+    }
+
+    .site-name {
+        font-size: 20px;
+        margin-top: 10px;
+        color: white;
+        background-color: white;
+        text-shadow: -1px -1px 0 red, 1px -2px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    }
+
+
+    .site-name:hover {
+        text-shadow: -2px -1px 0 red, 1px -2px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    }
+
+
+    .add-teacher {
+        width: 560px;
+        height: 900px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+
+
+
+    .header input {
+        font-size: 10px;
+        height: 40px;
+        margin-bottom: 15px;
+        width: 100px;
+        transition: 0.5s;
+        margin-left: 50px;
+    }
+
+    .header button {
+        margin-left: 50px;
+    }
+
+
+    .header div {
+        justify-content: right;
+    }
+
+    .header input:hover {
+        width: 150px;
+        transition: 0.5s;
+    }
+
+
+}
